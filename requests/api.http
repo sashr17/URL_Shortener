@@ -1,0 +1,6 @@
+POST http://localhost:5000/api/url/shorten
+Content-Type: application/json
+
+{
+  "longUrl": "https://www.amazon.in/Apple-MacBook-Air-13-3-inch-MQD32HN/dp/B073Q5R6VR/ref=sr_1_1_sspa?dchild=1&keywords=macbook+air&qid=1615116577&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExOFJUWDhIOVBYSEMyJmVuY3J5cHRlZElkPUEwMjkxMzQ3M1IxTUFSOFZRTTAzSiZlbmNyeXB0ZWRBZElkPUEwNDI5MDk4MlE0ODY4TFlZNkpMTyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU="
+}

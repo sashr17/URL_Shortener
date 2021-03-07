@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://<USER_NAME>:<PASSWORD>@cluster0.qvak2.mongodb.net/<DB_NAME>?retryWrites=true&w=majority",
+  "baseURL": "http://localhost:5000"
+}
