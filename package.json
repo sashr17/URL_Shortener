@@ -4,8 +4,8 @@
   "description": "URL Shortener Service",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
-    "dev": "nodemon index"
+    "start": "node ./backend",
+    "dev": "nodemon ./backend"
   },
   "author": "Santhosh R",
   "license": "ISC",
