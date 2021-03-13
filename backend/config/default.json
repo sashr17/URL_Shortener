@@ -1,4 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://sashr17:test@2020@cluster0.qvak2.mongodb.net/url_shortener_db?retryWrites=true&w=majority",
+  "mongoURI": "mongodb+srv://<USER_NAME>:<PASSWORD>@cluster0.qvak2.mongodb.net/<DB_NAME>?retryWrites=true&w=majority",
   "baseURL": "http://localhost:5000"
 }
