@@ -1,5 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
+import TextField from "@material-ui/core/TextField";
+import Button from "@material-ui/core/Button";
 
 import "./App.css";
 
@@ -36,12 +38,40 @@ function App() {
     <div className="App">
       <header className="App-header">URL Shortener</header>
       <section className="url-details long-url-section">
-        <input type="text" value={state.longURL} onChange={setLongURL} />
-        <button onClick={shortenURL}>Shorten URL</button>
+        <TextField
+          className="long-url-text-field"
+          label="URL"
+          variant="outlined"
+          placeholder="Enter or paste long URL"
+          value={state.longURL}
+          onChange={setLongURL}
+        />
+        <Button variant="contained" color="primary" onClick={shortenURL}>
+          Shorten URL
+        </Button>
       </section>
-      <section className="url-details short-url-section">
-        {state.shortURL}
-      </section>
+      {state.shortURL && (
+        <section className="url-details short-url-section">
+          <TextField
+            className="short-url-text-field"
+            label="Short URL"
+            variant="outlined"
+            InputProps={{
+              readOnly: true,
+            }}
+            value={state.shortURL}
+          />
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={() => {
+              navigator.clipboard.writeText(state.shortURL);
+            }}
+          >
+            Copy URL
+          </Button>
+        </section>
+      )}
     </div>
   );
 }
