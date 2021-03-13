@@ -1,0 +1,37 @@
+.App {
+  /* text-align: center;
+  margin: 24px auto; */
+  /* background-color: #282c34;
+  min-height: 100vh;
+  color: #fff; */
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  margin-bottom: 24px;
+  padding: 12px;
+  background-color: #282c34;
+  color: #fff;
+}
+
+.url-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.url-details input {
+  width: 45%;
+  font-size: 16px;
+  height: 40px;
+}
+
+.url-details button {
+  height: 46px;
+  margin-left: 8px;
+}
